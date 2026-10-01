@@ -10,9 +10,9 @@
  * the SAME model, which only the caller can assemble with `compareThroughput`.
  */
 
-import { richestProbe } from "../engine/probe-runner";
-import { hostOf } from "../internal/utils";
-import { defineRule } from "./types";
+import { richestProbe } from "../engine/probe-runner.js";
+import { hostOf } from "../internal/utils.js";
+import { defineRule } from "./types.js";
 
 export type ThroughputSample = {
   /** Identifies the lane in the caller's own terms. */

@@ -1,7 +1,7 @@
-export { anthropicVendor } from "./anthropic";
-export { openaiVendor } from "./openai";
-export { geminiVendor } from "./gemini";
-export { VENDORS, vendorFor } from "./table";
-export { normalizeBaseUrl } from "./base-url";
-export { defineVendor } from "./types";
+export { anthropicVendor } from "./anthropic.js";
+export { openaiVendor } from "./openai.js";
+export { geminiVendor } from "./gemini.js";
+export { VENDORS, vendorFor } from "./table.js";
+export { normalizeBaseUrl } from "./base-url.js";
+export { defineVendor } from "./types.js";
 //# sourceMappingURL=index.js.map

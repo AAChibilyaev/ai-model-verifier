@@ -1,12 +1,12 @@
-import { callWire } from "./engine/context";
-import { type FactsEntry } from "./models/facts";
-import { type MakerId } from "./makers/table";
-import type { Maker } from "./makers/types";
-import { type RuleId } from "./rules/table";
-import type { Rule } from "./rules/types";
-import type { RuleRun, VerifyOptions, VerifyResult } from "./types";
-import { type VendorId } from "./vendors/table";
-import type { VendorAdapter } from "./vendors/types";
+import { callWire } from "./engine/context.js";
+import { type FactsEntry } from "./models/facts.js";
+import { type MakerId } from "./makers/table.js";
+import type { Maker } from "./makers/types.js";
+import { type RuleId } from "./rules/table.js";
+import type { Rule } from "./rules/types.js";
+import type { RuleRun, VerifyOptions, VerifyResult } from "./types.js";
+import { type VendorId } from "./vendors/table.js";
+import type { VendorAdapter } from "./vendors/types.js";
 export type Registry<V extends string = VendorId, R extends string = RuleId, M extends string = MakerId> = {
     vendors: readonly VendorAdapter<V>[];
     rules: readonly Rule<R>[];

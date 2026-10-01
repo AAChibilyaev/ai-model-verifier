@@ -4,7 +4,7 @@
  * A fact about the lane; the model behind it may be the real one.
  */
 
-import { defineRule } from "./types";
+import { defineRule } from "./types.js";
 
 const THINK_TAG = /<\/?think>/;
 

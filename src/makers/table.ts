@@ -1,5 +1,5 @@
-import type { VendorId } from "../vendors/table";
-import type { Maker } from "./types";
+import type { VendorId } from "../vendors/table.js";
+import type { Maker } from "./types.js";
 
 // Every word is matched on word boundaries (a digit or hyphen may follow, a
 // letter may not), so "meta" never hits "metadata" and "o3" still hits "o3-mini".

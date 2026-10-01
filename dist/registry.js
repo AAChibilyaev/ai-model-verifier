@@ -1,7 +1,7 @@
-import { MAKERS } from "./makers/table";
-import { RULES } from "./rules/table";
-import { VENDORS } from "./vendors/table";
-import { runRulesWith, verifyWith } from "./verify";
+import { MAKERS } from "./makers/table.js";
+import { RULES } from "./rules/table.js";
+import { VENDORS } from "./vendors/table.js";
+import { runRulesWith, verifyWith } from "./verify.js";
 /**
  * A verifier with the built-in tables plus the caller's own vendors, makers,
  * rules and model facts. Consumer rules run after the built-ins (so they never

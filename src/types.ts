@@ -1,13 +1,13 @@
-import type { ProbeLabel, ProbeSignal } from "./probes/table";
-import type { SurveyLabel } from "./probes/survey";
-import type { FingerprintLabel } from "./probes/answer-fingerprint";
-import type { Finding, Reports } from "./rules/types";
-import type { RuleId } from "./rules/table";
-import type { TransportFn, TransportMode } from "./transport";
-import type { MakerId } from "./makers/table";
-import type { VendorId } from "./vendors/table";
-import type { BuiltRequest, ProbeUsage } from "./vendors/types";
-import type { TierSignatures } from "./rules/tokenizer-fingerprint";
+import type { ProbeLabel, ProbeSignal } from "./probes/table.js";
+import type { SurveyLabel } from "./probes/survey.js";
+import type { FingerprintLabel } from "./probes/answer-fingerprint.js";
+import type { Finding, Reports } from "./rules/types.js";
+import type { RuleId } from "./rules/table.js";
+import type { TransportFn, TransportMode } from "./transport.js";
+import type { MakerId } from "./makers/table.js";
+import type { VendorId } from "./vendors/table.js";
+import type { BuiltRequest, ProbeUsage } from "./vendors/types.js";
+import type { TierSignatures } from "./rules/tokenizer-fingerprint.js";
 
 export type {
   ProbeUsage,

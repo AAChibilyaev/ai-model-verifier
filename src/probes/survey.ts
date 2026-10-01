@@ -1,4 +1,4 @@
-import { nonceTag } from "./prompts";
+import { nonceTag } from "./prompts.js";
 
 /**
  * Survey questions: asked alongside the ladder, never graded into a verdict.

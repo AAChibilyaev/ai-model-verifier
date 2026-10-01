@@ -1,6 +1,6 @@
-import { type ProbeSignal } from "../probes/table";
-import type { ProbeOutcome } from "../types";
-import { type RunCtx } from "./context";
+import { type ProbeSignal } from "../probes/table.js";
+import type { ProbeOutcome } from "../types.js";
+import { type RunCtx } from "./context.js";
 /** A probe's outcome plus what the rules need but the result never carries. */
 export type ProbeEval = ProbeOutcome & {
     text: string | undefined;

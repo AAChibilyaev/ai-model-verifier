@@ -1,5 +1,5 @@
-import { classifyAnswer, FINGERPRINT_CELLS, } from "../probes/answer-fingerprint";
-import { buildChat, callWire } from "./context";
+import { classifyAnswer, FINGERPRINT_CELLS, } from "../probes/answer-fingerprint.js";
+import { buildChat, callWire } from "./context.js";
 /** Room for a "Sure, " prefix; thinkers get the facts' floor on top. */
 const CELL_MAX_TOKENS = 32;
 const TEMPERATURE = 1;

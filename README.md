@@ -154,3 +154,10 @@ set of synthetic endpoints. `test/parity/record.ts` records a new fixture.
 ## License
 
 AGPL-3.0-only.
+
+## Package checks
+
+`bun run typecheck` checks source types; `bun test` runs the engine and transport
+regressions. `bun run test:node` builds the package and checks every exported
+entry point in native Node.js, including timeout handling in the emitted
+transport. The publish preflight includes these distribution checks.

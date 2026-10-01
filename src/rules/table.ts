@@ -1,4 +1,4 @@
-import type { ProbeSignal } from "../probes/table";
+import type { ProbeSignal } from "../probes/table.js";
 import {
   cjkLeakRule,
   codingToolRule,
@@ -9,18 +9,18 @@ import {
   servedModelMismatchRule,
   substitutedRule,
   tierSelfReportRule,
-} from "./probe-ladder";
-import { envelopeRule } from "./response-metadata";
-import { signatureRule } from "./thinking-signature";
-import { surveyRule } from "./survey";
-import { answerFingerprintRule } from "./answer-fingerprint";
-import { thinkLeakRule } from "./think-leak";
-import { wrapperLeakRule } from "./wrapper-leak";
-import { thinkingFloorRule } from "./thinking-floor";
-import { throughputRule } from "./throughput";
-import { tokenTruthRule } from "./token-truth";
-import { tokenizerFingerprintRule } from "./tokenizer-fingerprint";
-import type { Rule } from "./types";
+} from "./probe-ladder.js";
+import { envelopeRule } from "./response-metadata.js";
+import { signatureRule } from "./thinking-signature.js";
+import { surveyRule } from "./survey.js";
+import { answerFingerprintRule } from "./answer-fingerprint.js";
+import { thinkLeakRule } from "./think-leak.js";
+import { wrapperLeakRule } from "./wrapper-leak.js";
+import { thinkingFloorRule } from "./thinking-floor.js";
+import { throughputRule } from "./throughput.js";
+import { tokenTruthRule } from "./token-truth.js";
+import { tokenizerFingerprintRule } from "./tokenizer-fingerprint.js";
+import type { Rule } from "./types.js";
 
 /**
  * Precedence is this order: the first finding that is not a note decides the

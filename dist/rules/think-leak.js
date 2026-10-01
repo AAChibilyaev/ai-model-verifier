@@ -3,7 +3,7 @@
  * identity probes then read the model's deliberation instead of its answer.
  * A fact about the lane; the model behind it may be the real one.
  */
-import { defineRule } from "./types";
+import { defineRule } from "./types.js";
 const THINK_TAG = /<\/?think>/;
 export const thinkLeakRule = defineRule({
     id: "think-leak",

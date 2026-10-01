@@ -7,8 +7,8 @@
  * so a narrow entry (opus-4-7 thinks adaptively) sits above the broad one
  * (every claude belongs to anthropic) and both apply.
  */
-import { type MakerId } from "../makers/table";
-import type { Maker } from "../makers/types";
+import { type MakerId } from "../makers/table.js";
+import type { Maker } from "../makers/types.js";
 export type ThinkingMode = "adaptive" | "extended" | "none";
 export type TokenizerGeneration = "claude-v1" | "claude-v2";
 export type ModelFacts<M extends string = MakerId> = {

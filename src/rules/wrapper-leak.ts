@@ -5,8 +5,8 @@
  * about the lane.
  */
 
-import { WRAPPER_SIGNATURES } from "../identity/patterns";
-import { defineRule } from "./types";
+import { WRAPPER_SIGNATURES } from "../identity/patterns.js";
+import { defineRule } from "./types.js";
 
 export const wrapperLeakRule = defineRule({
   id: "wrapper-leak",

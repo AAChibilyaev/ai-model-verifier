@@ -1,4 +1,4 @@
-import { rec } from "../internal/utils";
+import { rec } from "../internal/utils.js";
 export const ANTHROPIC_USAGE = new Set([
     "input_tokens",
     "output_tokens",

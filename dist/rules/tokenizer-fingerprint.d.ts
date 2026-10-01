@@ -44,5 +44,5 @@ export declare function tierForDelta(delta: number, signatures?: TierSignatures)
 export declare function judgeTokenizerFingerprint(requestedModel: string, result: TokenizerFingerprintResult, tiers: readonly string[]): string | null;
 /** True when two measurements of the same lane disagree: the backend changed. */
 export declare function fingerprintDrifted(prior: number | null | undefined, current: TokenizerFingerprintResult): boolean;
-export declare const tokenizerFingerprintRule: import("./types").Rule<"tokenizer-fingerprint", "fixedText", "evidence">;
+export declare const tokenizerFingerprintRule: import("./types.js").Rule<"tokenizer-fingerprint", "fixedText", "evidence">;
 //# sourceMappingURL=tokenizer-fingerprint.d.ts.map

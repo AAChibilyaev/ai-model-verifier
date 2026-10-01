@@ -1,4 +1,4 @@
-import { type ChatRequest, type ProbeMeta, type ReasoningUsage, type WireCtx } from "./types";
+import { type ChatRequest, type ProbeMeta, type ReasoningUsage, type WireCtx } from "./types.js";
 declare function chat(req: ChatRequest, ctx: WireCtx): {
     url: string;
     headers: {

@@ -5,13 +5,13 @@ import {
   hasScamPage,
   includesAny,
   includesAnyWord,
-} from "../identity/signals";
+} from "../identity/signals.js";
 import {
   CLOUD_HOST_PATTERNS,
   FAKE_RESPONSE_SIGNATURES,
-} from "../identity/patterns";
-import type { ResolvedMaker } from "../makers/types";
-import { nonceTag } from "./prompts";
+} from "../identity/patterns.js";
+import type { ResolvedMaker } from "../makers/types.js";
+import { nonceTag } from "./prompts.js";
 
 /**
  * A probe is a request plus a grader for its own reply. Probes are data, not

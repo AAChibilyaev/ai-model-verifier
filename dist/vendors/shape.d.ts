@@ -1,4 +1,4 @@
-import type { EnvelopeShape } from "./types";
+import type { EnvelopeShape } from "./types.js";
 export declare const ANTHROPIC_USAGE: Set<string>;
 export declare const OPENAI_USAGE: Set<string>;
 export declare const GEMINI_USAGE: Set<string>;

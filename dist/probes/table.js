@@ -1,6 +1,6 @@
-import { cjkLeak, hasCodingToolRefusal, hasForeignIdentity, hasScamPage, includesAny, includesAnyWord, } from "../identity/signals";
-import { CLOUD_HOST_PATTERNS, FAKE_RESPONSE_SIGNATURES, } from "../identity/patterns";
-import { nonceTag } from "./prompts";
+import { cjkLeak, hasCodingToolRefusal, hasForeignIdentity, hasScamPage, includesAny, includesAnyWord, } from "../identity/signals.js";
+import { CLOUD_HOST_PATTERNS, FAKE_RESPONSE_SIGNATURES, } from "../identity/patterns.js";
+import { nonceTag } from "./prompts.js";
 export const PROBES = [
     {
         label: "emotional",

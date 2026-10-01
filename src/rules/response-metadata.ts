@@ -11,16 +11,16 @@
  * worth being able to ask.
  */
 
-import { richestProbe } from "../engine/probe-runner";
-import { rec } from "../internal/utils";
+import { richestProbe } from "../engine/probe-runner.js";
+import { rec } from "../internal/utils.js";
 import {
   ANTHROPIC_USAGE,
   envelopeShapeOf,
   GEMINI_USAGE,
   OPENAI_USAGE,
-} from "../vendors/shape";
-import type { EnvelopeShape } from "../vendors/types";
-import { defineRule } from "./types";
+} from "../vendors/shape.js";
+import type { EnvelopeShape } from "../vendors/types.js";
+import { defineRule } from "./types.js";
 
 export type ResponseMetadata = {
   /** Shape the payload matches, regardless of which API was called. */

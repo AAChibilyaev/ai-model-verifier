@@ -1,9 +1,9 @@
-import { isTransientError } from "../identity/signals";
-import type { ConnectivityError } from "../types";
-import { envelopeShapeOf } from "../vendors/shape";
-import { vendorFor } from "../vendors/table";
-import type { VendorAdapter } from "../vendors/types";
-import { callWire, wireCtx, type RunCtx } from "./context";
+import { isTransientError } from "../identity/signals.js";
+import type { ConnectivityError } from "../types.js";
+import { envelopeShapeOf } from "../vendors/shape.js";
+import { vendorFor } from "../vendors/table.js";
+import type { VendorAdapter } from "../vendors/types.js";
+import { callWire, wireCtx, type RunCtx } from "./context.js";
 
 export type HandshakeOutcome<V extends string> =
   | { ok: true; wire: VendorAdapter<V>; status: number }

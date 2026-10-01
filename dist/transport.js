@@ -1,4 +1,4 @@
-import { errMessage, rec } from "./internal/utils";
+import { errMessage, rec } from "./internal/utils.js";
 // CORS block and dead host both surface as an opaque TypeError
 // (whatwg/fetch#1123). no-cors strips Authorization, so this proves reachability
 // ONLY and its opaque response must never be inspected.
@@ -29,7 +29,8 @@ export const directTransport = async (args) => {
         return { status: res.status, data, error: null, corsBlocked: false };
     }
     catch (err) {
-        const isAbort = err instanceof DOMException && err.name === "AbortError";
+        const isAbort = err instanceof DOMException &&
+            (err.name === "AbortError" || err.name === "TimeoutError");
         const msg = errMessage(err);
         return {
             status: null,
@@ -60,7 +61,7 @@ export function browserTransport(opts) {
             });
             const wrapped = rec(await res.json().catch(() => null));
             const inner = rec(wrapped?.data);
-            if (!inner || typeof inner.status !== "number")
+            if (!res.ok || !inner || typeof inner.status !== "number")
                 return {
                     status: null,
                     data: null,
@@ -78,7 +79,10 @@ export function browserTransport(opts) {
             return {
                 status: null,
                 data: null,
-                error: errMessage(err),
+                error: err instanceof DOMException &&
+                    (err.name === "AbortError" || err.name === "TimeoutError")
+                    ? "timeout"
+                    : errMessage(err),
                 corsBlocked: false,
             };
         }

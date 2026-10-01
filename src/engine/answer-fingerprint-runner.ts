@@ -3,8 +3,8 @@ import {
   FINGERPRINT_CELLS,
   type FingerprintCell,
   type FingerprintLabel,
-} from "../probes/answer-fingerprint";
-import { buildChat, callWire, type RunCtx } from "./context";
+} from "../probes/answer-fingerprint.js";
+import { buildChat, callWire, type RunCtx } from "./context.js";
 
 /** Room for a "Sure, " prefix; thinkers get the facts' floor on top. */
 const CELL_MAX_TOKENS = 32;

@@ -1,12 +1,12 @@
-import { echoesNonce } from "../probes/prompts";
+import { echoesNonce } from "../probes/prompts.js";
 import {
   SURVEY,
   stripNonce,
   type SurveyDef,
   type SurveyLabel,
-} from "../probes/survey";
-import type { ProbeUsage, ReasoningUsage } from "../vendors/types";
-import { buildChat, callWire, type RunCtx } from "./context";
+} from "../probes/survey.js";
+import type { ProbeUsage, ReasoningUsage } from "../vendors/types.js";
+import { buildChat, callWire, type RunCtx } from "./context.js";
 
 const ANSWER_CAP = 2000;
 

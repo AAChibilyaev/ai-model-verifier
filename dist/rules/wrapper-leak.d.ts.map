@@ -1,1 +1,1 @@
-{"version":3,"file":"wrapper-leak.d.ts","sourceRoot":"","sources":["../../src/rules/wrapper-leak.ts"],"names":[],"mappings":"AAAA;;;;;GAKG;AAKH,eAAO,MAAM,eAAe,0DAoB1B,CAAC"}
+{"version":3,"file":"wrapper-leak.d.ts","sourceRoot":"","sources":["../../src/rules/wrapper-leak.ts"],"names":[],"mappings":"AAAA;;;;;GAKG;AAKH,eAAO,MAAM,eAAe,6DAoB1B,CAAC"}

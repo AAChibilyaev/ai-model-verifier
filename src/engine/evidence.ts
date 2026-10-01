@@ -5,15 +5,15 @@ import {
   LONG_PROMPT,
   SHORT_PROMPT,
   SIGNATURE_PROMPT,
-} from "../probes/prompts";
-import type { TransportResult } from "../transport";
-import { callWire, chat, wireCtx, type RunCtx } from "./context";
-import { collectProbes, type ProbeEval } from "./probe-runner";
-import { collectSurvey, type SurveyOutcome } from "./survey-runner";
+} from "../probes/prompts.js";
+import type { TransportResult } from "../transport.js";
+import { callWire, chat, wireCtx, type RunCtx } from "./context.js";
+import { collectProbes, type ProbeEval } from "./probe-runner.js";
+import { collectSurvey, type SurveyOutcome } from "./survey-runner.js";
 import {
   collectAnswerFingerprint,
   type FingerprintSample,
-} from "./answer-fingerprint-runner";
+} from "./answer-fingerprint-runner.js";
 
 const THINKING_BUDGET_TOKENS = 2000;
 /** Thinking plus answer; too small and an adaptive model skips thinking to fit. */

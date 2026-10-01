@@ -1,4 +1,4 @@
-import type { Rule } from "./types";
+import type { Rule } from "./types.js";
 /**
  * Precedence is this order: the first finding that is not a note decides the
  * verdict. Evidence rules sit above the probe ladder because they read facts a

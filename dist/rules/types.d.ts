@@ -1,13 +1,13 @@
-import type { ResolvedChecks, RunCtx } from "../engine/context";
-import type { EvidenceBag, EvidenceKey } from "../engine/evidence";
-import type { SurveyOutcome } from "../engine/survey-runner";
-import type { FingerprintSample } from "../engine/answer-fingerprint-runner";
-import type { ResponseMetadata } from "./response-metadata";
-import type { SignatureResult } from "./thinking-signature";
-import type { ThinkingFloorResult } from "./thinking-floor";
-import type { ThroughputSample } from "./throughput";
-import type { TokenTruthResult } from "./token-truth";
-import type { TokenizerFingerprintResult } from "./tokenizer-fingerprint";
+import type { ResolvedChecks, RunCtx } from "../engine/context.js";
+import type { EvidenceBag, EvidenceKey } from "../engine/evidence.js";
+import type { SurveyOutcome } from "../engine/survey-runner.js";
+import type { FingerprintSample } from "../engine/answer-fingerprint-runner.js";
+import type { ResponseMetadata } from "./response-metadata.js";
+import type { SignatureResult } from "./thinking-signature.js";
+import type { ThinkingFloorResult } from "./thinking-floor.js";
+import type { ThroughputSample } from "./throughput.js";
+import type { TokenTruthResult } from "./token-truth.js";
+import type { TokenizerFingerprintResult } from "./tokenizer-fingerprint.js";
 /**
  * How a finding weighs on the verdict. `fail` and `suspect` both make the
  * endpoint suspicious (kept apart so a consumer policy can demote one),

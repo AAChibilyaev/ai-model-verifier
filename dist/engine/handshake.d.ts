@@ -1,6 +1,6 @@
-import type { ConnectivityError } from "../types";
-import type { VendorAdapter } from "../vendors/types";
-import { type RunCtx } from "./context";
+import type { ConnectivityError } from "../types.js";
+import type { VendorAdapter } from "../vendors/types.js";
+import { type RunCtx } from "./context.js";
 export type HandshakeOutcome<V extends string> = {
     ok: true;
     wire: VendorAdapter<V>;

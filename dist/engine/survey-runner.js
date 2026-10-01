@@ -1,6 +1,6 @@
-import { echoesNonce } from "../probes/prompts";
-import { SURVEY, stripNonce, } from "../probes/survey";
-import { buildChat, callWire } from "./context";
+import { echoesNonce } from "../probes/prompts.js";
+import { SURVEY, stripNonce, } from "../probes/survey.js";
+import { buildChat, callWire } from "./context.js";
 const ANSWER_CAP = 2000;
 async function ask(ctx, q) {
     const started = performance.now();

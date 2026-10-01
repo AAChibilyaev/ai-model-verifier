@@ -1,12 +1,12 @@
-import { type MakerId } from "./makers/table";
-import type { Maker } from "./makers/types";
-import type { FactsEntry } from "./models/facts";
-import { type RuleId } from "./rules/table";
-import type { Rule } from "./rules/types";
-import type { RuleRun, VerifyOptions, VerifyResult } from "./types";
-import { type VendorId } from "./vendors/table";
-import type { VendorAdapter } from "./vendors/types";
-import { type Registry } from "./verify";
+import { type MakerId } from "./makers/table.js";
+import type { Maker } from "./makers/types.js";
+import type { FactsEntry } from "./models/facts.js";
+import { type RuleId } from "./rules/table.js";
+import type { Rule } from "./rules/types.js";
+import type { RuleRun, VerifyOptions, VerifyResult } from "./types.js";
+import { type VendorId } from "./vendors/table.js";
+import type { VendorAdapter } from "./vendors/types.js";
+import { type Registry } from "./verify.js";
 /**
  * A verifier with the built-in tables plus the caller's own vendors, makers,
  * rules and model facts. Consumer rules run after the built-ins (so they never

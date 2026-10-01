@@ -1,7 +1,7 @@
-import { CJK_CHAR, CODING_TOOL_NAMES, CODING_TOOL_REFUSAL_PATTERNS, SCAM_PAGE_PATTERNS, } from "./identity/patterns";
-import { MAKERS, makerFor } from "./makers/table";
-import { resolveMaker } from "./makers/resolve";
-import { VENDORS, vendorFor } from "./vendors/table";
+import { CJK_CHAR, CODING_TOOL_NAMES, CODING_TOOL_REFUSAL_PATTERNS, SCAM_PAGE_PATTERNS, } from "./identity/patterns.js";
+import { MAKERS, makerFor } from "./makers/table.js";
+import { resolveMaker } from "./makers/resolve.js";
+import { VENDORS, vendorFor } from "./vendors/table.js";
 function collectPhrase(lower, phrases, kind) {
     const out = [];
     for (const phrase of phrases) {

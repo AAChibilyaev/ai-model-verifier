@@ -39,5 +39,5 @@ export type SignatureResult = {
     replayVerified?: boolean;
     reason?: string;
 };
-export declare const signatureRule: import("./types").Rule<"signature", "thinkingReply", "note">;
+export declare const signatureRule: import("./types.js").Rule<"signature", "thinkingReply", "note">;
 //# sourceMappingURL=thinking-signature.d.ts.map

@@ -1,6 +1,6 @@
-import { type SurveyLabel } from "../probes/survey";
-import type { ProbeUsage, ReasoningUsage } from "../vendors/types";
-import { type RunCtx } from "./context";
+import { type SurveyLabel } from "../probes/survey.js";
+import type { ProbeUsage, ReasoningUsage } from "../vendors/types.js";
+import { type RunCtx } from "./context.js";
 /** One survey answer as it came; nothing here decides anything. */
 export type SurveyOutcome = {
     label: SurveyLabel;

@@ -1,8 +1,8 @@
-import { detectSignal } from "../identity/signals";
-import { sleep } from "../internal/utils";
-import { echoesNonce } from "../probes/prompts";
-import { PROBES, } from "../probes/table";
-import { buildChat, callWire } from "./context";
+import { detectSignal } from "../identity/signals.js";
+import { sleep } from "../internal/utils.js";
+import { echoesNonce } from "../probes/prompts.js";
+import { PROBES, } from "../probes/table.js";
+import { buildChat, callWire } from "./context.js";
 const NONCE_MISMATCH_RETRIES = 2;
 const NONCE_MISMATCH_BACKOFF_MS = 500;
 const RESPONSE_CAP = 2000;

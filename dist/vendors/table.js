@@ -1,6 +1,6 @@
-import { anthropicVendor } from "./anthropic";
-import { geminiVendor } from "./gemini";
-import { openaiVendor } from "./openai";
+import { anthropicVendor } from "./anthropic.js";
+import { geminiVendor } from "./gemini.js";
+import { openaiVendor } from "./openai.js";
 export const VENDORS = [
     anthropicVendor,
     openaiVendor,

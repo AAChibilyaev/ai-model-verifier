@@ -1,7 +1,7 @@
-import { CLOUD_HOST_PATTERNS } from "../identity/patterns";
-import { globMatches, normalizeModelId } from "../models/facts";
-import { MAKERS, makerFor, type MakerId } from "./table";
-import type { Maker, ResolvedMaker } from "./types";
+import { CLOUD_HOST_PATTERNS } from "../identity/patterns.js";
+import { globMatches, normalizeModelId } from "../models/facts.js";
+import { MAKERS, makerFor, type MakerId } from "./table.js";
+import type { Maker, ResolvedMaker } from "./types.js";
 
 /** The maker with its foreign vocabulary: every other maker's words, minus cloud hosts and its own. */
 export function resolveMaker<M extends string>(

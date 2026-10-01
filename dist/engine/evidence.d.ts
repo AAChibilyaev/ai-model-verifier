@@ -1,8 +1,8 @@
-import type { TransportResult } from "../transport";
-import { type RunCtx } from "./context";
-import { type ProbeEval } from "./probe-runner";
-import { type SurveyOutcome } from "./survey-runner";
-import { type FingerprintSample } from "./answer-fingerprint-runner";
+import type { TransportResult } from "../transport.js";
+import { type RunCtx } from "./context.js";
+import { type ProbeEval } from "./probe-runner.js";
+import { type SurveyOutcome } from "./survey-runner.js";
+import { type FingerprintSample } from "./answer-fingerprint-runner.js";
 export type FixedTextEvidence = {
     short: TransportResult;
     long: TransportResult;

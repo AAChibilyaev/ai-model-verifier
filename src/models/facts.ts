@@ -8,9 +8,9 @@
  * (every claude belongs to anthropic) and both apply.
  */
 
-import { MAKERS, type MakerId } from "../makers/table";
-import { makerForModel } from "../makers/resolve";
-import type { Maker } from "../makers/types";
+import { MAKERS, type MakerId } from "../makers/table.js";
+import { makerForModel } from "../makers/resolve.js";
+import type { Maker } from "../makers/types.js";
 
 export type ThinkingMode = "adaptive" | "extended" | "none";
 export type TokenizerGeneration = "claude-v1" | "claude-v2";

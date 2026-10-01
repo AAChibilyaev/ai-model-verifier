@@ -1,8 +1,8 @@
-import { anthropicVendor } from "./anthropic";
-import { geminiVendor } from "./gemini";
-import { openaiVendor } from "./openai";
-import type { MakerId } from "../makers/table";
-import type { VendorAdapter } from "./types";
+import { anthropicVendor } from "./anthropic.js";
+import { geminiVendor } from "./gemini.js";
+import { openaiVendor } from "./openai.js";
+import type { MakerId } from "../makers/table.js";
+import type { VendorAdapter } from "./types.js";
 
 export const VENDORS = [
   anthropicVendor,

@@ -1,4 +1,4 @@
-import type { Maker } from "./types";
+import type { Maker } from "./types.js";
 export declare const MAKERS: readonly [{
     readonly id: "anthropic";
     readonly name: "Anthropic";

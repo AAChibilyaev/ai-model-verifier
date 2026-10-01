@@ -44,5 +44,5 @@ export type ThroughputComparison = {
 export declare function compareThroughput(samples: ThroughputSample[], opts?: {
     outlierRatio?: number;
 }): ThroughputComparison[];
-export declare const throughputRule: import("./types").Rule<"throughput", "probes", "note">;
+export declare const throughputRule: import("./types.js").Rule<"throughput", "probes", "note">;
 //# sourceMappingURL=throughput.d.ts.map

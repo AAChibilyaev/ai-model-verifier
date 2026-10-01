@@ -3,10 +3,10 @@ import {
   CODING_TOOL_NAMES,
   CODING_TOOL_REFUSAL_PATTERNS,
   SCAM_PAGE_PATTERNS,
-} from "./identity/patterns";
-import { MAKERS, makerFor } from "./makers/table";
-import { resolveMaker } from "./makers/resolve";
-import { VENDORS, vendorFor } from "./vendors/table";
+} from "./identity/patterns.js";
+import { MAKERS, makerFor } from "./makers/table.js";
+import { resolveMaker } from "./makers/resolve.js";
+import { VENDORS, vendorFor } from "./vendors/table.js";
 
 export type HighlightKind =
   "foreign" | "cjk" | "coding-tool" | "scam" | "home" | null;

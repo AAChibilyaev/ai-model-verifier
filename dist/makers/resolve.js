@@ -1,6 +1,6 @@
-import { CLOUD_HOST_PATTERNS } from "../identity/patterns";
-import { globMatches, normalizeModelId } from "../models/facts";
-import { MAKERS, makerFor } from "./table";
+import { CLOUD_HOST_PATTERNS } from "../identity/patterns.js";
+import { globMatches, normalizeModelId } from "../models/facts.js";
+import { MAKERS, makerFor } from "./table.js";
 /** The maker with its foreign vocabulary: every other maker's words, minus cloud hosts and its own. */
 export function resolveMaker(makers, id) {
     const maker = makerFor(makers, id);

@@ -17,8 +17,8 @@
  * default and only tells you the endpoint accepts a thinking block.
  */
 
-import type { RuleCtx } from "./types";
-import { defineRule } from "./types";
+import type { RuleCtx } from "./types.js";
+import { defineRule } from "./types.js";
 
 /** Real signatures run to hundreds of chars; this only rejects a stub. */
 const SIGNATURE_MIN_LEN = 50;

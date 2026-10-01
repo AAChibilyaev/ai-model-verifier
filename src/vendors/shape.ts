@@ -1,5 +1,5 @@
-import { rec } from "../internal/utils";
-import type { EnvelopeShape } from "./types";
+import { rec } from "../internal/utils.js";
+import type { EnvelopeShape } from "./types.js";
 
 export const ANTHROPIC_USAGE = new Set([
   "input_tokens",

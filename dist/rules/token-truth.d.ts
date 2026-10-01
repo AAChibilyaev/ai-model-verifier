@@ -11,7 +11,7 @@
  * without re-measuring: the loose-looking bounds exist because real Anthropic
  * responses sat near them.
  */
-import type { ModelFacts } from "../models/facts";
+import type { ModelFacts } from "../models/facts.js";
 export type TokenTruthCheck = {
     id: "usage-present" | "input-delta" | "output-bounded" | "count-tokens";
     pass: boolean;
@@ -30,5 +30,5 @@ export declare const expectedInputDelta: (facts: ModelFacts<string>) => {
     min: number;
     max: number;
 };
-export declare const tokenTruthRule: import("./types").Rule<"token-truth", "countTokens" | "fixedText", "note">;
+export declare const tokenTruthRule: import("./types.js").Rule<"token-truth", "countTokens" | "fixedText", "note">;
 //# sourceMappingURL=token-truth.d.ts.map

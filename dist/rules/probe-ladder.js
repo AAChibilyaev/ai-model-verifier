@@ -3,9 +3,9 @@
  * the table lists them. Each rule reads every probe's outcome, which is why the
  * probes are data and the rules are here.
  */
-import { detectSubstitution } from "../models/substitution";
-import { detectServedModelMismatch, detectTierMismatch } from "../models/tiers";
-import { defineRule } from "./types";
+import { detectSubstitution } from "../models/substitution.js";
+import { detectServedModelMismatch, detectTierMismatch } from "../models/tiers.js";
+import { defineRule } from "./types.js";
 const QUORUM = 3;
 const labelsWith = (probes, sig) => probes
     .filter((r) => r.signal === sig)

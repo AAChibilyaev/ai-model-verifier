@@ -19,7 +19,7 @@
  * evidence.
  */
 
-import { defineRule, type RuleCtx } from "./types";
+import { defineRule, type RuleCtx } from "./types.js";
 
 export type TierSignatures = Readonly<Record<string, readonly number[]>>;
 

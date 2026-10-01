@@ -12,9 +12,9 @@
  * responses sat near them.
  */
 
-import { COUNT_PROBE_MAX_TOKENS as MAX_TOKENS } from "../probes/prompts";
-import type { ModelFacts } from "../models/facts";
-import { defineRule, type RuleCtx } from "./types";
+import { COUNT_PROBE_MAX_TOKENS as MAX_TOKENS } from "../probes/prompts.js";
+import type { ModelFacts } from "../models/facts.js";
+import { defineRule, type RuleCtx } from "./types.js";
 
 /**
  * Expected `input_tokens` growth between the short and long prompt. Two bands

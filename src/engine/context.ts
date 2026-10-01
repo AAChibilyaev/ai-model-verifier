@@ -1,15 +1,15 @@
-import { isRecord } from "../internal/utils";
-import type { ModelFacts } from "../models/facts";
-import type { TierSignatures } from "../rules/tokenizer-fingerprint";
-import type { TransportFn, TransportMode, TransportResult } from "../transport";
-import type { Checks, ProbeAttempt } from "../types";
-import type { ResolvedMaker } from "../makers/types";
+import { isRecord } from "../internal/utils.js";
+import type { ModelFacts } from "../models/facts.js";
+import type { TierSignatures } from "../rules/tokenizer-fingerprint.js";
+import type { TransportFn, TransportMode, TransportResult } from "../transport.js";
+import type { Checks, ProbeAttempt } from "../types.js";
+import type { ResolvedMaker } from "../makers/types.js";
 import type {
   BuiltRequest,
   ChatRequest,
   VendorAdapter,
   WireCtx,
-} from "../vendors/types";
+} from "../vendors/types.js";
 
 export type ResolvedChecks = {
   signature: { strict: boolean } | null;

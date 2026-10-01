@@ -1,4 +1,4 @@
-import { nonceTag } from "./prompts";
+import { nonceTag } from "./prompts.js";
 // Cutoff and context window were asked until 3.4.0 and dropped: on one
 // backend known to be real they gave twelve different cutoffs in 34 runs.
 export const SURVEY = [

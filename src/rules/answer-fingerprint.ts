@@ -10,8 +10,8 @@ import {
   emptyCell,
   type FingerprintCellSample,
   type FingerprintSample,
-} from "../engine/answer-fingerprint-runner";
-import { defineRule } from "./types";
+} from "../engine/answer-fingerprint-runner.js";
+import { defineRule } from "./types.js";
 
 export const DEFAULT_MATCH_BITS = 0.25;
 export const DEFAULT_MISMATCH_BITS = 0.35;

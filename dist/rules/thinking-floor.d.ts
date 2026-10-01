@@ -13,7 +13,7 @@
  * `completion_tokens: 1`, and it still echoes `model: gemini-2.5-pro`, so the
  * substitution rule never fires. The token count is the only free evidence left.
  */
-import type { ReasoningUsage } from "../vendors/types";
+import type { ReasoningUsage } from "../vendors/types.js";
 export declare const DEFAULT_MIN_COMPLETION_TOKENS = 10;
 export type ThinkingFloorOptions = {
     /** Id globs added to the always-thinks set (normalised, prefix stripped). */
@@ -46,5 +46,5 @@ export declare function readThinkingUsage(data: unknown): ReasoningUsage | null;
 export declare function judgeReasoningUsage(usage: ReasoningUsage | null, floor: number): ThinkingFloorResult;
 /** Judge one reply to the short probe. Pure: pass any response body already collected. */
 export declare function judgeThinkingFloor(model: string, data: unknown, options?: ThinkingFloorOptions): ThinkingFloorResult;
-export declare const thinkingFloorRule: import("./types").Rule<"thinking-floor", "floorReply", "evidence">;
+export declare const thinkingFloorRule: import("./types.js").Rule<"thinking-floor", "floorReply", "evidence">;
 //# sourceMappingURL=thinking-floor.d.ts.map

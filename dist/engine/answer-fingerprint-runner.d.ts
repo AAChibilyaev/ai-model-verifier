@@ -1,5 +1,5 @@
-import { type FingerprintLabel } from "../probes/answer-fingerprint";
-import { type RunCtx } from "./context";
+import { type FingerprintLabel } from "../probes/answer-fingerprint.js";
+import { type RunCtx } from "./context.js";
 export type FingerprintCellSample = {
     /** Canonical answer to how often it came. */
     answers: Record<string, number>;

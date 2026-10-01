@@ -1,4 +1,4 @@
-import { type ChatRequest, type ProbeMeta, type ReasoningUsage, type WireCtx } from "./types";
+import { type ChatRequest, type ProbeMeta, type ReasoningUsage, type WireCtx } from "./types.js";
 declare function chat(req: ChatRequest, ctx: WireCtx): {
     url: string;
     headers: {
@@ -9,7 +9,7 @@ declare function chat(req: ChatRequest, ctx: WireCtx): {
         max_tokens: number;
         max_completion_tokens?: undefined;
         model: string;
-        messages: readonly import("./types").ChatMessage[];
+        messages: readonly import("./types.js").ChatMessage[];
         temperature?: number | undefined;
         top_p?: number | undefined;
         seed?: number | undefined;
@@ -17,7 +17,7 @@ declare function chat(req: ChatRequest, ctx: WireCtx): {
         max_tokens?: undefined;
         max_completion_tokens: number;
         model: string;
-        messages: readonly import("./types").ChatMessage[];
+        messages: readonly import("./types.js").ChatMessage[];
         temperature?: number | undefined;
         top_p?: number | undefined;
         seed?: number | undefined;

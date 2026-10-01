@@ -1,4 +1,4 @@
-import type { ResolvedMaker } from "../makers/types";
+import type { ResolvedMaker } from "../makers/types.js";
 /**
  * A probe is a request plus a grader for its own reply. Probes are data, not
  * rules: the ladder rules read across every probe's outcome (a quorum, a mux

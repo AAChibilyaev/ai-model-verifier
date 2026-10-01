@@ -10,7 +10,7 @@
  * lanes, "which of my Claude lanes answer with a chatcmpl id" is a question
  * worth being able to ask.
  */
-import type { EnvelopeShape } from "../vendors/types";
+import type { EnvelopeShape } from "../vendors/types.js";
 export type ResponseMetadata = {
     /** Shape the payload matches, regardless of which API was called. */
     shape: EnvelopeShape;
@@ -29,5 +29,5 @@ export type ResponseMetadata = {
 };
 export declare function readResponseMetadata(data: unknown, expected: EnvelopeShape): ResponseMetadata;
 /** Free metadata from the richest probe reply, read as the wire's shape. */
-export declare const envelopeRule: import("./types").Rule<"envelope", "probes", "note">;
+export declare const envelopeRule: import("./types.js").Rule<"envelope", "probes", "note">;
 //# sourceMappingURL=response-metadata.d.ts.map

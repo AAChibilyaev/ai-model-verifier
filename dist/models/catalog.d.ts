@@ -1,5 +1,5 @@
-import { makerForModel } from "../makers/resolve";
-import { type VendorId } from "../vendors/table";
+import { makerForModel } from "../makers/resolve.js";
+import { type VendorId } from "../vendors/table.js";
 /** Models the tester offers by default, per wire. */
 export declare const CURATED_MODELS: Record<VendorId, readonly string[]>;
 export { makerForModel };

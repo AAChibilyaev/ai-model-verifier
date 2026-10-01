@@ -4,12 +4,12 @@
  * probes are data and the rules are here.
  */
 
-import type { RunCtx } from "../engine/context";
-import type { ProbeEval } from "../engine/probe-runner";
-import type { ProbeSignal } from "../probes/table";
-import { detectSubstitution } from "../models/substitution";
-import { detectServedModelMismatch, detectTierMismatch } from "../models/tiers";
-import { defineRule } from "./types";
+import type { RunCtx } from "../engine/context.js";
+import type { ProbeEval } from "../engine/probe-runner.js";
+import type { ProbeSignal } from "../probes/table.js";
+import { detectSubstitution } from "../models/substitution.js";
+import { detectServedModelMismatch, detectTierMismatch } from "../models/tiers.js";
+import { defineRule } from "./types.js";
 
 const QUORUM = 3;
 

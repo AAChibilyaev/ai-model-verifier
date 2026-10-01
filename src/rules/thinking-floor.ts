@@ -14,10 +14,10 @@
  * substitution rule never fires. The token count is the only free evidence left.
  */
 
-import { intOf, rec } from "../internal/utils";
-import { normalizeModelId, resolveModelFacts } from "../models/facts";
-import type { ReasoningUsage } from "../vendors/types";
-import { defineRule, type RuleCtx } from "./types";
+import { intOf, rec } from "../internal/utils.js";
+import { normalizeModelId, resolveModelFacts } from "../models/facts.js";
+import type { ReasoningUsage } from "../vendors/types.js";
+import { defineRule, type RuleCtx } from "./types.js";
 
 export const DEFAULT_MIN_COMPLETION_TOKENS = 10;
 

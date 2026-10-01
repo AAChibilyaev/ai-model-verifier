@@ -5,8 +5,8 @@
  * the profiles it trusts with the helpers below (Jensen-Shannon divergence in
  * bits, the thresholds of arXiv 2607.10252).
  */
-import { emptyCell, } from "../engine/answer-fingerprint-runner";
-import { defineRule } from "./types";
+import { emptyCell, } from "../engine/answer-fingerprint-runner.js";
+import { defineRule } from "./types.js";
 export const DEFAULT_MATCH_BITS = 0.25;
 export const DEFAULT_MISMATCH_BITS = 0.35;
 export const DEFAULT_MIN_CELL_SAMPLES = 10;

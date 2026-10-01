@@ -1,14 +1,14 @@
-import { detectSignal } from "../identity/signals";
-import { sleep } from "../internal/utils";
-import { echoesNonce } from "../probes/prompts";
+import { detectSignal } from "../identity/signals.js";
+import { sleep } from "../internal/utils.js";
+import { echoesNonce } from "../probes/prompts.js";
 import {
   PROBES,
   type ProbeDef,
   type ProbeLabel,
   type ProbeSignal,
-} from "../probes/table";
-import type { ProbeOutcome } from "../types";
-import { buildChat, callWire, type RunCtx } from "./context";
+} from "../probes/table.js";
+import type { ProbeOutcome } from "../types.js";
+import { buildChat, callWire, type RunCtx } from "./context.js";
 
 const NONCE_MISMATCH_RETRIES = 2;
 const NONCE_MISMATCH_BACKOFF_MS = 500;

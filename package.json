@@ -65,7 +65,8 @@
     "build": "tsc -p tsconfig.build.json",
     "typecheck": "tsc --noEmit",
     "test": "bun test",
-    "prepublishOnly": "bun run typecheck && bun run build"
+    "test:node": "bun run build && node --test test/node/*.mjs",
+    "prepublishOnly": "bun run typecheck && bun run test:node"
   },
   "devDependencies": {
     "typescript": "^7.0.2"

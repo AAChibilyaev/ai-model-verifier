@@ -1,6 +1,6 @@
-import { intOf, rec } from "../internal/utils";
-import { normalizeBaseUrl } from "./base-url";
-import { defineVendor, } from "./types";
+import { intOf, rec } from "../internal/utils.js";
+import { normalizeBaseUrl } from "./base-url.js";
+import { defineVendor, } from "./types.js";
 // Anthropic refuses a browser preflight unless the caller opts in with this
 // header, and every relay that reimplements their API inherits the rule. The
 // header is meaningless to endpoints that do not check it, so it goes on every

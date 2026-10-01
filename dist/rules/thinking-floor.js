@@ -13,9 +13,9 @@
  * `completion_tokens: 1`, and it still echoes `model: gemini-2.5-pro`, so the
  * substitution rule never fires. The token count is the only free evidence left.
  */
-import { intOf, rec } from "../internal/utils";
-import { normalizeModelId, resolveModelFacts } from "../models/facts";
-import { defineRule } from "./types";
+import { intOf, rec } from "../internal/utils.js";
+import { normalizeModelId, resolveModelFacts } from "../models/facts.js";
+import { defineRule } from "./types.js";
 export const DEFAULT_MIN_COMPLETION_TOKENS = 10;
 export const alwaysThinksEntries = (models = []) => models.map((p) => ({ match: `${normalizeModelId(p)}*`, alwaysThinks: true }));
 export function mustAlwaysThink(model, options) {

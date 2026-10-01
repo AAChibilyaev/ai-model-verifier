@@ -10,10 +10,10 @@
  * lanes, "which of my Claude lanes answer with a chatcmpl id" is a question
  * worth being able to ask.
  */
-import { richestProbe } from "../engine/probe-runner";
-import { rec } from "../internal/utils";
-import { ANTHROPIC_USAGE, envelopeShapeOf, GEMINI_USAGE, OPENAI_USAGE, } from "../vendors/shape";
-import { defineRule } from "./types";
+import { richestProbe } from "../engine/probe-runner.js";
+import { rec } from "../internal/utils.js";
+import { ANTHROPIC_USAGE, envelopeShapeOf, GEMINI_USAGE, OPENAI_USAGE, } from "../vendors/shape.js";
+import { defineRule } from "./types.js";
 function idPrefixOf(id) {
     if (typeof id !== "string" || id.length === 0)
         return null;

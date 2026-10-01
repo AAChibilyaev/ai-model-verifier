@@ -1,6 +1,6 @@
-import { intOf, rec } from "../internal/utils";
-import { normalizeBaseUrl } from "./base-url";
-import { defineVendor, } from "./types";
+import { intOf, rec } from "../internal/utils.js";
+import { normalizeBaseUrl } from "./base-url.js";
+import { defineVendor, } from "./types.js";
 /** A thinking budget would otherwise eat the whole output cap. */
 const MIN_OUTPUT_TOKENS = 1024;
 function chat(req, ctx) {

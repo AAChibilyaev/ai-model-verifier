@@ -1,4 +1,4 @@
-import { CJK_CHAR, CJK_LEAK_MIN_CHARS, CLOUD_HOST_PATTERNS, CODING_TOOL_NAMES, CODING_TOOL_REFUSAL_PATTERNS, SCAM_PAGE_PATTERNS, } from "./patterns";
+import { CJK_CHAR, CJK_LEAK_MIN_CHARS, CLOUD_HOST_PATTERNS, CODING_TOOL_NAMES, CODING_TOOL_REFUSAL_PATTERNS, SCAM_PAGE_PATTERNS, } from "./patterns.js";
 export const includesAny = (text, patterns) => patterns.some((p) => text.includes(p));
 const escapeRegExp = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 /**

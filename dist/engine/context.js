@@ -1,4 +1,4 @@
-import { isRecord } from "../internal/utils";
+import { isRecord } from "../internal/utils.js";
 export const DEFAULT_FINGERPRINT_REPEATS = 3;
 export const DEFAULT_FINGERPRINT_CONCURRENCY = 4;
 export function resolveChecks(checks) {

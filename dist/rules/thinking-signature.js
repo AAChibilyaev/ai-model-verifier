@@ -16,7 +16,7 @@
  * its own backend rather than passing our block through. It stays off by
  * default and only tells you the endpoint accepts a thinking block.
  */
-import { defineRule } from "./types";
+import { defineRule } from "./types.js";
 /** Real signatures run to hundreds of chars; this only rejects a stub. */
 const SIGNATURE_MIN_LEN = 50;
 async function signatureResult(ctx) {

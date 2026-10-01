@@ -1,5 +1,5 @@
-import type { ResolvedMaker } from "../makers/types";
-import type { ProbeLabel, ProbeSignal } from "../probes/table";
+import type { ResolvedMaker } from "../makers/types.js";
+import type { ProbeLabel, ProbeSignal } from "../probes/table.js";
 export declare const includesAny: (text: string, patterns: readonly string[]) => boolean;
 /**
  * Maker vocabulary is short ("meta", "o3", "glm"), so it is matched on word

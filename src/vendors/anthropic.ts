@@ -1,5 +1,5 @@
-import { intOf, rec } from "../internal/utils";
-import { normalizeBaseUrl } from "./base-url";
+import { intOf, rec } from "../internal/utils.js";
+import { normalizeBaseUrl } from "./base-url.js";
 import {
   defineVendor,
   type ChatRequest,
@@ -7,7 +7,7 @@ import {
   type ProbeMeta,
   type ThinkingBlockRead,
   type WireCtx,
-} from "./types";
+} from "./types.js";
 
 type ContentBlock = {
   type?: string;

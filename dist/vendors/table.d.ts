@@ -1,28 +1,28 @@
-import type { VendorAdapter } from "./types";
+import type { VendorAdapter } from "./types.js";
 export declare const VENDORS: readonly [{
     readonly id: "anthropic";
     readonly vendorName: "anthropic";
     readonly envelope: "anthropic";
     readonly fallbackWires: readonly ["openai"];
     readonly ops: {
-        readonly chat: (req: import("./types").ChatRequest, ctx: import("./types").WireCtx) => {
+        readonly chat: (req: import("./types.js").ChatRequest, ctx: import("./types.js").WireCtx) => {
             url: string;
             headers: Record<string, string>;
             body: Record<string, unknown>;
         };
-        readonly countTokens: (req: import("./types").CountRequest, ctx: import("./types").WireCtx) => {
+        readonly countTokens: (req: import("./types.js").CountRequest, ctx: import("./types.js").WireCtx) => {
             url: string;
             headers: Record<string, string>;
             body: {
                 model: string;
-                messages: readonly import("./types").ChatMessage[];
+                messages: readonly import("./types.js").ChatMessage[];
             };
         };
     };
     readonly read: {
         readonly text: (data: unknown) => string | null;
-        readonly meta: (data: unknown) => import("./types").ProbeMeta;
-        readonly thinkingBlock: (data: unknown) => import("./types").ThinkingBlockRead | null;
+        readonly meta: (data: unknown) => import("./types.js").ProbeMeta;
+        readonly thinkingBlock: (data: unknown) => import("./types.js").ThinkingBlockRead | null;
         readonly countedTokens: (data: unknown) => number | null;
     };
     readonly defaultMaker: "anthropic";
@@ -32,7 +32,7 @@ export declare const VENDORS: readonly [{
     readonly envelope: "openai";
     readonly fallbackWires: readonly [];
     readonly ops: {
-        readonly chat: (req: import("./types").ChatRequest, ctx: import("./types").WireCtx) => {
+        readonly chat: (req: import("./types.js").ChatRequest, ctx: import("./types.js").WireCtx) => {
             url: string;
             headers: {
                 "content-type": string;
@@ -42,7 +42,7 @@ export declare const VENDORS: readonly [{
                 max_tokens: number;
                 max_completion_tokens?: undefined;
                 model: string;
-                messages: readonly import("./types").ChatMessage[];
+                messages: readonly import("./types.js").ChatMessage[];
                 temperature?: number | undefined;
                 top_p?: number | undefined;
                 seed?: number | undefined;
@@ -50,7 +50,7 @@ export declare const VENDORS: readonly [{
                 max_tokens?: undefined;
                 max_completion_tokens: number;
                 model: string;
-                messages: readonly import("./types").ChatMessage[];
+                messages: readonly import("./types.js").ChatMessage[];
                 temperature?: number | undefined;
                 top_p?: number | undefined;
                 seed?: number | undefined;
@@ -59,8 +59,8 @@ export declare const VENDORS: readonly [{
     };
     readonly read: {
         readonly text: (data: unknown) => string | null;
-        readonly meta: (data: unknown) => import("./types").ProbeMeta;
-        readonly reasoningUsage: (data: unknown) => import("./types").ReasoningUsage | null;
+        readonly meta: (data: unknown) => import("./types.js").ProbeMeta;
+        readonly reasoningUsage: (data: unknown) => import("./types.js").ReasoningUsage | null;
     };
     readonly defaultMaker: "openai";
 }, {
@@ -69,7 +69,7 @@ export declare const VENDORS: readonly [{
     readonly envelope: "gemini";
     readonly fallbackWires: readonly ["openai"];
     readonly ops: {
-        readonly chat: (req: import("./types").ChatRequest, ctx: import("./types").WireCtx) => {
+        readonly chat: (req: import("./types.js").ChatRequest, ctx: import("./types.js").WireCtx) => {
             url: string;
             headers: {
                 "content-type": string;
@@ -91,8 +91,8 @@ export declare const VENDORS: readonly [{
     };
     readonly read: {
         readonly text: (data: unknown) => string | null;
-        readonly meta: (data: unknown) => import("./types").ProbeMeta;
-        readonly reasoningUsage: (data: unknown) => import("./types").ReasoningUsage | null;
+        readonly meta: (data: unknown) => import("./types.js").ProbeMeta;
+        readonly reasoningUsage: (data: unknown) => import("./types.js").ReasoningUsage | null;
     };
     readonly defaultMaker: "google";
 }];

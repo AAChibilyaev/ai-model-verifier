@@ -5,9 +5,9 @@ import {
   CODING_TOOL_NAMES,
   CODING_TOOL_REFUSAL_PATTERNS,
   SCAM_PAGE_PATTERNS,
-} from "./patterns";
-import type { ResolvedMaker } from "../makers/types";
-import type { ProbeLabel, ProbeSignal } from "../probes/table";
+} from "./patterns.js";
+import type { ResolvedMaker } from "../makers/types.js";
+import type { ProbeLabel, ProbeSignal } from "../probes/table.js";
 
 export const includesAny = (text: string, patterns: readonly string[]) =>
   patterns.some((p) => text.includes(p));

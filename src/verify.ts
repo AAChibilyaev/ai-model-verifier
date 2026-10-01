@@ -1,30 +1,30 @@
-import { callWire, resolveChecks, type RunCtx } from "./engine/context";
-import { EVIDENCE_ORDER, EvidenceStore } from "./engine/evidence";
-import { runHandshake } from "./engine/handshake";
-import type { ProbeEval } from "./engine/probe-runner";
-import { foldVerdict } from "./engine/verdict";
-import { hostOf } from "./internal/utils";
+import { callWire, resolveChecks, type RunCtx } from "./engine/context.js";
+import { EVIDENCE_ORDER, EvidenceStore } from "./engine/evidence.js";
+import { runHandshake } from "./engine/handshake.js";
+import type { ProbeEval } from "./engine/probe-runner.js";
+import { foldVerdict } from "./engine/verdict.js";
+import { hostOf } from "./internal/utils.js";
 import {
   normalizeModelId,
   resolveModelFacts,
   type FactsEntry,
-} from "./models/facts";
-import { MAKERS, type MakerId } from "./makers/table";
-import { resolveMaker } from "./makers/resolve";
-import type { Maker } from "./makers/types";
-import { makeNonce } from "./probes/prompts";
-import { RULES, type RuleId } from "./rules/table";
-import type { Finding, Reports, Rule, RuleCtx } from "./rules/types";
-import { browserTransport, directTransport } from "./transport";
+} from "./models/facts.js";
+import { MAKERS, type MakerId } from "./makers/table.js";
+import { resolveMaker } from "./makers/resolve.js";
+import type { Maker } from "./makers/types.js";
+import { makeNonce } from "./probes/prompts.js";
+import { RULES, type RuleId } from "./rules/table.js";
+import type { Finding, Reports, Rule, RuleCtx } from "./rules/types.js";
+import { browserTransport, directTransport } from "./transport.js";
 import type {
   ConnectivityError,
   ProbeOutcome,
   RuleRun,
   VerifyOptions,
   VerifyResult,
-} from "./types";
-import { VENDORS, vendorFor, type VendorId } from "./vendors/table";
-import type { ProbeUsage, VendorAdapter } from "./vendors/types";
+} from "./types.js";
+import { VENDORS, vendorFor, type VendorId } from "./vendors/table.js";
+import type { ProbeUsage, VendorAdapter } from "./vendors/types.js";
 
 const DEFAULT_TIMEOUT_MS = 30_000;
 

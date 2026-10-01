@@ -1,7 +1,7 @@
-import { isTransientError } from "../identity/signals";
-import { envelopeShapeOf } from "../vendors/shape";
-import { vendorFor } from "../vendors/table";
-import { callWire, wireCtx } from "./context";
+import { isTransientError } from "../identity/signals.js";
+import { envelopeShapeOf } from "../vendors/shape.js";
+import { vendorFor } from "../vendors/table.js";
+import { callWire, wireCtx } from "./context.js";
 const HANDSHAKE_PROMPT = "hi";
 const HANDSHAKE_MAX_TOKENS = 1;
 function classifyStatus(status) {

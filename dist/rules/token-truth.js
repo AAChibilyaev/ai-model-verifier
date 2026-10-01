@@ -11,8 +11,8 @@
  * without re-measuring: the loose-looking bounds exist because real Anthropic
  * responses sat near them.
  */
-import { COUNT_PROBE_MAX_TOKENS as MAX_TOKENS } from "../probes/prompts";
-import { defineRule } from "./types";
+import { COUNT_PROBE_MAX_TOKENS as MAX_TOKENS } from "../probes/prompts.js";
+import { defineRule } from "./types.js";
 /**
  * Expected `input_tokens` growth between the short and long prompt. Two bands
  * because Anthropic changed tokenizer: a relay claiming a new-tokenizer model

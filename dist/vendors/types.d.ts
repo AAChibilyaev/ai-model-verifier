@@ -1,4 +1,4 @@
-import type { ModelFacts } from "../models/facts";
+import type { ModelFacts } from "../models/facts.js";
 /** Vendor whose response shape a payload looks like. */
 export type EnvelopeShape = "anthropic" | "openai" | "gemini" | "unknown";
 export type ProbeUsage = {

@@ -1,15 +1,15 @@
-import { callWire, resolveChecks } from "./engine/context";
-import { EVIDENCE_ORDER, EvidenceStore } from "./engine/evidence";
-import { runHandshake } from "./engine/handshake";
-import { foldVerdict } from "./engine/verdict";
-import { hostOf } from "./internal/utils";
-import { normalizeModelId, resolveModelFacts, } from "./models/facts";
-import { MAKERS } from "./makers/table";
-import { resolveMaker } from "./makers/resolve";
-import { makeNonce } from "./probes/prompts";
-import { RULES } from "./rules/table";
-import { browserTransport, directTransport } from "./transport";
-import { VENDORS, vendorFor } from "./vendors/table";
+import { callWire, resolveChecks } from "./engine/context.js";
+import { EVIDENCE_ORDER, EvidenceStore } from "./engine/evidence.js";
+import { runHandshake } from "./engine/handshake.js";
+import { foldVerdict } from "./engine/verdict.js";
+import { hostOf } from "./internal/utils.js";
+import { normalizeModelId, resolveModelFacts, } from "./models/facts.js";
+import { MAKERS } from "./makers/table.js";
+import { resolveMaker } from "./makers/resolve.js";
+import { makeNonce } from "./probes/prompts.js";
+import { RULES } from "./rules/table.js";
+import { browserTransport, directTransport } from "./transport.js";
+import { VENDORS, vendorFor } from "./vendors/table.js";
 const DEFAULT_TIMEOUT_MS = 30_000;
 export const DEFAULT_REGISTRY = {
     vendors: VENDORS,

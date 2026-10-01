@@ -1,5 +1,5 @@
-import type { Finding } from "../rules/types";
-import type { VerifyVerdict } from "../types";
+import type { Finding } from "../rules/types.js";
+import type { VerifyVerdict } from "../types.js";
 
 export type FoldedVerdict = {
   verdict: VerifyVerdict;

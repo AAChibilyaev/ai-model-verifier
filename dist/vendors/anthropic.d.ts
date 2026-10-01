@@ -1,4 +1,4 @@
-import { type ChatRequest, type CountRequest, type ProbeMeta, type ThinkingBlockRead, type WireCtx } from "./types";
+import { type ChatRequest, type CountRequest, type ProbeMeta, type ThinkingBlockRead, type WireCtx } from "./types.js";
 declare function chat(req: ChatRequest, ctx: WireCtx): {
     url: string;
     headers: Record<string, string>;
@@ -9,7 +9,7 @@ declare function countTokens(req: CountRequest, ctx: WireCtx): {
     headers: Record<string, string>;
     body: {
         model: string;
-        messages: readonly import("./types").ChatMessage[];
+        messages: readonly import("./types.js").ChatMessage[];
     };
 };
 declare function text(data: unknown): string | null;

@@ -5,7 +5,7 @@
  * injects a system prompt, which "pro" lane spends no hidden tokens on a sum.
  */
 
-import { defineRule } from "./types";
+import { defineRule } from "./types.js";
 
 export const surveyRule = defineRule({
   id: "survey",

@@ -7,8 +7,8 @@
  * so a narrow entry (opus-4-7 thinks adaptively) sits above the broad one
  * (every claude belongs to anthropic) and both apply.
  */
-import { MAKERS } from "../makers/table";
-import { makerForModel } from "../makers/resolve";
+import { MAKERS } from "../makers/table.js";
+import { makerForModel } from "../makers/resolve.js";
 /** Lowercase, `.` and `_` to `-`, any `vendor/` or `pool/` prefix stripped. */
 export const normalizeModelId = (model) => model.trim().toLowerCase().replace(/[._]/g, "-").split("/").pop() ?? "";
 const escapeRegExp = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");

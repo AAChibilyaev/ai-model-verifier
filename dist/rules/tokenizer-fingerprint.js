@@ -18,7 +18,7 @@
  * one, and even then only between-model differences on the same endpoint are
  * evidence.
  */
-import { defineRule } from "./types";
+import { defineRule } from "./types.js";
 /** Empty on purpose; see the module note. Pass your own calibration. */
 export const DEFAULT_TIER_SIGNATURES = {};
 export function tierForDelta(delta, signatures = DEFAULT_TIER_SIGNATURES) {

@@ -5,7 +5,7 @@
  * the profiles it trusts with the helpers below (Jensen-Shannon divergence in
  * bits, the thresholds of arXiv 2607.10252).
  */
-import { type FingerprintSample } from "../engine/answer-fingerprint-runner";
+import { type FingerprintSample } from "../engine/answer-fingerprint-runner.js";
 export declare const DEFAULT_MATCH_BITS = 0.25;
 export declare const DEFAULT_MISMATCH_BITS = 0.35;
 export declare const DEFAULT_MIN_CELL_SAMPLES = 10;
@@ -46,5 +46,5 @@ export declare function fingerprintClusters(samples: Record<string, FingerprintS
     members: string[];
     pooled: FingerprintSample;
 }[];
-export declare const answerFingerprintRule: import("./types").Rule<"answer-fingerprint", "answerFingerprint", "note">;
+export declare const answerFingerprintRule: import("./types.js").Rule<"answer-fingerprint", "answerFingerprint", "note">;
 //# sourceMappingURL=answer-fingerprint.d.ts.map

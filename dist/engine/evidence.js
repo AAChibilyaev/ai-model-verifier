@@ -1,8 +1,8 @@
-import { COUNT_PROBE_MAX_TOKENS, DIVERSE_PROMPT, FLOOR_PROMPT, LONG_PROMPT, SHORT_PROMPT, SIGNATURE_PROMPT, } from "../probes/prompts";
-import { callWire, chat, wireCtx } from "./context";
-import { collectProbes } from "./probe-runner";
-import { collectSurvey } from "./survey-runner";
-import { collectAnswerFingerprint, } from "./answer-fingerprint-runner";
+import { COUNT_PROBE_MAX_TOKENS, DIVERSE_PROMPT, FLOOR_PROMPT, LONG_PROMPT, SHORT_PROMPT, SIGNATURE_PROMPT, } from "../probes/prompts.js";
+import { callWire, chat, wireCtx } from "./context.js";
+import { collectProbes } from "./probe-runner.js";
+import { collectSurvey } from "./survey-runner.js";
+import { collectAnswerFingerprint, } from "./answer-fingerprint-runner.js";
 const THINKING_BUDGET_TOKENS = 2000;
 /** Thinking plus answer; too small and an adaptive model skips thinking to fit. */
 const SIGNATURE_MAX_TOKENS = 16000;
